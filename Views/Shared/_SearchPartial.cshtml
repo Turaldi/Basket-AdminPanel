@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+﻿@model IEnumerable<Product>
+=======
+﻿ @model IEnumerable<Product>
+>>>>>>> 51c4e4b201bc97a6db1e8b24abb0b908ceee4bcd
+
+@foreach (var item in Model)
+{
+    <li>
+        <a asp-controller="product" asp-action="detail" asp-route-id="@item.Id">@item.Name</a>
+    </li>
+}
